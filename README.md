@@ -69,4 +69,4 @@ BepInEx Configuration Manager（ゲーム内で `F1` キー）から変更でき
 
 ## ライセンス
 
-[MIT License](LICENSE)
+[GNU General Public License v3.0](LICENSE)
