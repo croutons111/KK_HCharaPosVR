@@ -9,9 +9,9 @@ namespace KK_HCharaPosVR
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string PluginGuid    = "kk.hcharaposvr";
+        public const string PluginGuid    = "KK_HCharaPosVR";
         public const string PluginName    = "KK_HCharaPosVR";
-        public const string PluginVersion = "0.7.0";
+        public const string PluginVersion = "0.7.1";
 
         internal static new ManualLogSource Logger = null!;
 
