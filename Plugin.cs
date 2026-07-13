@@ -12,7 +12,7 @@ namespace KK_HCharaPosVR
     {
         public const string PluginGuid    = "KK_HCharaPosVR";
         public const string PluginName    = "KK_HCharaPosVR";
-        public const string PluginVersion = "0.7.1";
+        public const string PluginVersion = "0.8.0";
 
         internal static new ManualLogSource Logger = null!;
 

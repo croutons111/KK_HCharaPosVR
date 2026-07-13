@@ -4,7 +4,7 @@
     <AssemblyName>KK_HCharaPosVR</AssemblyName>
     <RootNamespace>KK_HCharaPosVR</RootNamespace>
     <Description>VR H scene character position adjustment via controller</Description>
-    <Version>0.7.1</Version>
+    <Version>0.8.0</Version>
 
     <TargetFramework>net35</TargetFramework>
     <LangVersion>latest</LangVersion>

@@ -10,7 +10,7 @@
 
 In the VR H-scene, KK_HCharaPosVR lets you grab a character and move her with your right controller, and switch which character you're moving. Useful for fixing alignment or fine-tuning positions on the fly.
 
-> **Beta (0.7)** — verified on HF Patch 3.36 with Meta Quest 2.
+> **Beta** — verified on HF Patch 3.36 with Meta Quest 2. See [Releases](../../releases) for the latest version.
 
 ---
 
