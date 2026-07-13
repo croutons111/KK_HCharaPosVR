@@ -66,7 +66,7 @@ Change these in the in-game **BepInEx Configuration Manager** (default: `F1`).
 ## Known Limitations
 
 - **The X button (left controller) is not usable.** On Meta Quest 2 the X button press cannot be detected through the SteamVR legacy input API, so this version only supports the right controller's A button.
-- **Conflicts with KK_HCharaAdjustmentEx's automatic position correction.** Its auto-correction repositions characters on its own, so positions you set with this plugin may be shifted or overridden. When using both together, disable the auto-correction on the KK_HCharaAdjustmentEx side, or turn this plugin off (`General > Enabled`).
+- **Conflicts with KK_HCharaAdjustmentEx.** That plugin continuously enforces character positions every frame — this applies to both its automatic correction and its saved manual positions — so positions you move with this plugin get pulled back. Disabling only the auto-correction is **not** enough; turn off KK_HCharaAdjustmentEx itself (its `General > Enabled` setting), or turn this plugin off instead.
 - **Beta software** — verified only in a limited environment; unexpected behavior may occur.
 
 ---
