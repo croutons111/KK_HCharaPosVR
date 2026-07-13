@@ -7,6 +7,7 @@ using KKAPI.Chara;
 namespace KK_HCharaPosVR
 {
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
+    [BepInProcess("KoikatuVR")]
     public class Plugin : BaseUnityPlugin
     {
         public const string PluginGuid    = "KK_HCharaPosVR";
@@ -15,8 +16,11 @@ namespace KK_HCharaPosVR
 
         internal static new ManualLogSource Logger = null!;
 
-        public static ConfigEntry<float> F1MoveScale = null!;
-        public static ConfigEntry<float> F2MoveScale = null!;
+        public static ConfigEntry<bool>  MasterEnabled = null!;
+        public static ConfigEntry<float> F1MoveScale   = null!;
+        public static ConfigEntry<float> F2MoveScale   = null!;
+
+        public static bool IsEnabled => MasterEnabled == null || MasterEnabled.Value;
 
         private readonly Harmony _harmony = new Harmony(PluginGuid);
 
@@ -24,8 +28,10 @@ namespace KK_HCharaPosVR
         {
             Logger = base.Logger;
 
-            F1MoveScale = Config.Bind("Female 1", "Move Scale", 1.0f, "Female1 の移動量の倍率");
-            F2MoveScale = Config.Bind("Female 2", "Move Scale", 1.0f, "Female2 の移動量の倍率");
+            MasterEnabled = Config.Bind("General", "Enabled", true,
+                "Enable/disable all plugin features. OFF = vanilla behavior. When turned ON during an H scene, re-enter the H scene to take effect.");
+            F1MoveScale = Config.Bind("Female 1", "Move Scale", 1.0f, "Movement scale for Female1");
+            F2MoveScale = Config.Bind("Female 2", "Move Scale", 1.0f, "Movement scale for Female2");
 
             _harmony.PatchAll(typeof(Hooks));
             CharacterApi.RegisterExtraBehaviour<HCharaController>(PluginGuid);

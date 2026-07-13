@@ -10,6 +10,8 @@ namespace KK_HCharaPosVR
         [HarmonyPatch(typeof(VRHScene), "MapSameObjectDisable")]
         internal static void MapSameObjectDisable(VRHScene __instance)
         {
+            if (!Plugin.IsEnabled) return;
+
             Scene = __instance;
             HCharaController.ResetScene();
 

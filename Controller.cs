@@ -61,7 +61,8 @@ namespace KK_HCharaPosVR
 
         protected override void Update()
         {
-            if (!VRDevice.isPresent ||
+            if (!Plugin.IsEnabled ||
+                !VRDevice.isPresent ||
                 (_chaType != CharacterType.Female1 && _chaType != CharacterType.Female2))
             {
                 base.Update();

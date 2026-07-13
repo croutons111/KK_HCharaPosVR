@@ -57,6 +57,7 @@ Change these in the in-game **BepInEx Configuration Manager** (default: `F1`).
 
 | Section | Setting | Default | Description |
 |---|---|---|---|
+| General | Enabled | `ON` | Enable/disable all plugin features. OFF = vanilla behavior. |
 | Female 1 | Move Scale | `1.0` | Movement multiplier for Female 1. |
 | Female 2 | Move Scale | `1.0` | Movement multiplier for Female 2. |
 
@@ -65,6 +66,7 @@ Change these in the in-game **BepInEx Configuration Manager** (default: `F1`).
 ## Known Limitations
 
 - **The X button (left controller) is not usable.** On Meta Quest 2 the X button press cannot be detected through the SteamVR legacy input API, so this version only supports the right controller's A button.
+- **Conflicts with KK_HCharaAdjustmentEx's automatic position correction.** Its auto-correction repositions characters on its own, so positions you set with this plugin may be shifted or overridden. When using both together, disable the auto-correction on the KK_HCharaAdjustmentEx side, or turn this plugin off (`General > Enabled`).
 - **Beta software** — verified only in a limited environment; unexpected behavior may occur.
 
 ---
