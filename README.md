@@ -2,6 +2,9 @@
 
 **English** | [日本語](README.ja.md)
 
+> [!IMPORTANT]
+> **This plugin is deprecated.** It has been integrated into [KK_HCharaAdjustmentEx](https://github.com/croutons111/KK_HCharaAdjustmentEx) as its VR front-end (`KK_HCharaAdjustmentEx.VR.dll`, v1.15.0+), which also resolves the position conflict between the two plugins. Please use that instead and remove `KK_HCharaPosVR.dll`. This repository is archived and will receive no further updates.
+
 > A BepInEx plugin for **Koikatsu VR** that lets you reposition characters in real time with your VR controller during the H-scene.
 
 ---

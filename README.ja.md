@@ -2,6 +2,9 @@
 
 [English](README.md) | **日本語**
 
+> [!IMPORTANT]
+> **本プラグインは開発終了しました。** [KK_HCharaAdjustmentEx](https://github.com/croutons111/KK_HCharaAdjustmentEx) の VR フロントエンド（`KK_HCharaAdjustmentEx.VR.dll`・v1.15.0 以降）として統合され、両プラグイン間の位置競合も解消されています。今後はそちらを使用し、`KK_HCharaPosVR.dll` は削除してください。本リポジトリはアーカイブ済みで、以降の更新はありません。
+
 > **Koikatsu VR** の H シーンで、VR コントローラーを使ってキャラクターの位置をリアルタイムに調整する BepInEx プラグインです。
 
 ---
